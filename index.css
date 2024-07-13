@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.decoration{
+    text-align: center;
+    font-size: 100px;
+}
+body{
+    background: url(assets/img/img1.jpg);
+    background-size: 100%;
+    }
