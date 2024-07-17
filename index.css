@@ -1,38 +1,88 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 .decoration{
     text-align: center;
+    color: #ffbb00;
+    text-shadow: 1px 1px 2px black;
     font-size: 100px;
+    padding: 17vw 0;
+    background: linear-gradient(to bottom, #000, #0004 80%, transparent);
+    letter-spacing: 3px;
 }
 body{
-    background: url(assets/img/img1.jpg);
+    background: url(assets/img/img1.jpg) no-repeat fixed;
     background-size: 100%;
     }
 
     /*Seccion head*/
 
-    .caja-url{
-        background: black;
+    .nav{
+        background: rgb(133, 91, 15);
         width: 100%;
         height: 50px;
         font-size: 25px;
-        text-align: right;
         padding-top: 20px;
-    
+        text-align: center;
     }
-    .caja-url a{
-        width: 100px;
+    .nav a{
         text-decoration: none;
-        color: #8f425b;
-        border: 1px black;
-        border-radius: 10px;
+        color: #ffd000;
         margin: 10px;
-        margin-right: 20px;
-        padding-top: 10px;
+        font-weight: 400;
     }
+        
+        .search {
+            position: absolute;
+            right: 3%;
+            transform: translate(-20% , -25%);
+            padding: 10px;
+        }  
+        input{
+            outline: none;
+            box-sizing: border-box;
+            width: 0;
+            padding: 10px 20px;
+            color: #000;
+            border-radius: 50px;
+            font-size: 20px;
+            border: 5px solid #d1a515;
+            transition: all .7s ease;
+        }
+        ::placeholder{
+            color: #aaa;
+        }
+        .btn{
+            position: absolute;
+            right: 0;
+            top: 5px;
+            width: 60px;
+            height: 60px;
+            background: #ffdd1d;
+            line-height: 80px;
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+            transition: .5s;
+        }
+        .btn i{
+            font-size: 25px;
+            line-height: 80px;
+            color: #fff;
+            transition: all .7s ease;
+        }
+        .search:hover input{
+            width: 280px;
+        }
+        .search:hover i{
+            transform: rotate(-460deg);
+        }
+        .btn:hover{
+            background-color: #fff0;
+        }
 
     /*Primer parrafo*/
 
@@ -43,7 +93,7 @@ body{
     }
 
     .caja-parrafo p{
-        color: darkorange;
+        color: rgb(255, 255, 255);
         text-align: justify;
         width: 100%;
         /*para el espacio de separacion de galeria*/
@@ -78,7 +128,6 @@ body{
         text-align: justify;
         align-items: center;
         display: flex;
-        padding-left: 250px;
     }
 
     .Informacion p{
